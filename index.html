@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sierra &amp; Company — Consultoria Empresarial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Logo mark reused via JS clone -->
+  <template id="logo-tpl">
+    <svg class="logo-mark" viewBox="0 0 120 70" aria-hidden="true">
+      <path d="M2 60 L38 14 L52 34 L44 44 L34 32 L16 60 Z" fill="#23395d"/>
+      <path d="M44 60 L66 26 L96 60 Z" fill="#9aa6b2"/>
+      <path d="M52 44 L60 34 L70 48 Z" fill="#23395d"/>
+    </svg>
+  </template>
+
+  <main id="deck" class="deck"></main>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <button id="prev" class="nav-btn" aria-label="Slide anterior">&#8592;</button>
+    <div id="dots" class="dots"></div>
+    <button id="next" class="nav-btn" aria-label="Próximo slide">&#8594;</button>
+  </nav>
+  <div id="counter" class="counter"></div>
+
+  <script src="./slides.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
